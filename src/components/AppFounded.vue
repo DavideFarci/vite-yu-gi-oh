@@ -2,6 +2,13 @@
 export default {};
 </script>
 
-<template></template>
+<template>
+  <div class="founded">FOUNDED</div>
+</template>
 
-<style scoped></style>
+<style scoped>
+.founded {
+  background-color: black;
+  height: 3rem;
+}
+</style>
