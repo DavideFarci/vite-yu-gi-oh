@@ -37,7 +37,11 @@ export default {
     text-align: center;
     .type {
       font-size: 0.7em;
+      margin-top: 0.5rem;
     }
+  }
+  &:hover {
+    transform: scale(1.1);
   }
 }
 </style>
