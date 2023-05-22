@@ -28,10 +28,10 @@ export default {
   created() {
     setTimeout(() => {
       this.loadData();
-    }, 2000);
+    }, 1900);
     setTimeout(() => {
       this.isLoading = false;
-    }, 3000);
+    }, 2000);
   },
 };
 </script>
