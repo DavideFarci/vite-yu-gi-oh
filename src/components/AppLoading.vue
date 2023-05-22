@@ -25,6 +25,7 @@ export default {};
     font-size: 5rem;
     text-align: center;
     animation: spin 1.5s infinite linear;
+    padding: 5rem;
   }
 }
 </style>
