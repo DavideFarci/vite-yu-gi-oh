@@ -23,6 +23,9 @@ export default {
       axios
         .get("https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0")
         .then((response) => (this.store.AppList = response.data.data));
+      axios
+        .get("https://db.ygoprodeck.com/api/v7/archetypes.php")
+        .then((response) => (this.store.listArchetype = response.data));
     },
   },
   created() {

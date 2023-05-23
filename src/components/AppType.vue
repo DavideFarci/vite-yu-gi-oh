@@ -1,14 +1,24 @@
 <script>
-export default {};
+import { store } from "../store";
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
   <div class="select-container">
-    <select>
-      <option selected>Type</option>
-      <option value="opzione2">Opzione 2</option>
-      <option value="opzione3">Opzione 3</option>
-      <option value="opzione4">Opzione 4</option>
+    <select @change="">
+      <option
+        v-for="(option, index) in store.listArchetype"
+        :key="index"
+        :value="option.archetype_name"
+      >
+        {{ option.archetype_name }}
+      </option>
     </select>
   </div>
 </template>
