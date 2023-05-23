@@ -13,8 +13,8 @@ export default {
   <div class="select-container">
     <select @change="">
       <option
-        v-for="(option, index) in store.listArchetype"
-        :key="index"
+        v-for="option in store.listArchetype"
+        :key="option.archetype_name"
         :value="option.archetype_name"
       >
         {{ option.archetype_name }}
