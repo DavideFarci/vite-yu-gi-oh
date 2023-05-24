@@ -15,8 +15,6 @@ export default {
       v-model="store.selectedOption"
       @change="this.$emit('filteredSearch')"
     >
-      <option value="#" selected>Type</option>
-
       <option
         v-for="option in store.listArchetype"
         :key="option.archetype_name"
